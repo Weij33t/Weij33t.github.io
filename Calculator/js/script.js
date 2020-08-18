@@ -168,7 +168,7 @@ function generateResultsTemplate (index) {
                 Ваш ответ: <span class="more-results-task__user-answer">${userAnswer}</span>
             </div>
             <div class="more-results-task__answer">
-                Правильный ответ: <span class="more-results-task__answer-text">${answers[index]}</span>
+                Верный ответ: <span class="more-results-task__answer-text">${answers[index]}</span>
             </div>
         </div>
     `
