@@ -37,17 +37,17 @@ let operationBtns = document.querySelectorAll('.operationBtn'),
 
 // Переменные для записи вводимых данных
 
-let operationFlag,
-    chosenNumber,
-    quantity,
-    numberLength,
-    tasks = [],
-    answers = [],
-    answerInputs = [],
-    userAnswers = [],
-    wrongUserAnswers = [],
-    rightUserAnswers = [],
-    withoutEnteredAnswer = [];
+let operationFlag,  // Тип операции. Умножение - 0, деление - 1 
+    chosenNumber,  // Выбранное для тренировки число
+    quantity, // Количество чисел
+    numberLength, // Длина числа
+    tasks = [], // Массив с примерами
+    answers = [], // Массив с ответами
+    answerInputs = [], // Массив с полями для ввода
+    userAnswers = [], // Массив с ответами пользователя
+    wrongUserAnswers = [], // Массив с неправильными ответами
+    rightUserAnswers = [], // Массив с правильными ответами
+    withoutEnteredAnswer = []; // Массив с неведёнными ответами
 
 let wrongColor = '#e62548',
     rightColor = '#13a080';
@@ -156,7 +156,7 @@ let taskTemplate = (operation, index) => {
 
     let operationSymbol = operation ? "/" : "*";
     let length = parseInt(info.numberLength, 10);
-    tasks.push(Math.floor((Math.random()+1)*(10**length)));
+    tasks.push(Math.floor((Math.random())*(10**length)));
 
     return `
         <div class="slider-item-task">
@@ -217,6 +217,12 @@ function generateTask() {
     generateAnswersArray();
     getUserAnswers();
     
+}
+
+
+function addAsk() {
+
+    console.log("Added");
 }
 
 function generateAnswersArray() {
