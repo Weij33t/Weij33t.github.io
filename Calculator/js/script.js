@@ -156,7 +156,7 @@ let taskTemplate = (operation, index) => {
 
     let operationSymbol = operation ? "/" : "*";
     let length = parseInt(info.numberLength, 10);
-    tasks.push(Math.floor((Math.random())*(10**length)));
+    tasks.push(Math.ceil((Math.random())*(10**length)));
 
     return `
         <div class="slider-item-task">
@@ -270,4 +270,12 @@ moreInfo.onclick = function () {
 
 popupWindow.onclick = function () {
     this.classList.toggle('show');
+}
+
+
+let storyBtn = document.querySelector('.slider-item-results__story'),
+    storyContainer = document.querySelector('.story-inner');
+
+storyBtn.onclick = function() {
+    storyContainer.insertAdjacentHTML("beforeend", popupTaskContainer.innerHTML)
 }
