@@ -3006,8 +3006,11 @@ body {
 .profile-title {
   position: relative; }
   .profile-title__text {
-    font-size: calc(15px + 20 * ((100vw - 320px) / 1600));
+    font-size: calc(25px + 20 * ((100vw - 320px) / 1600));
     position: absolute;
+    color: white;
+    z-index: 3;
+    font-weight: bold;
     top: 50%; }
     
 .profile-title::after{
@@ -3309,6 +3312,10 @@ input:checked + .slider:before {
     padding: 15px 15px; } }
 
 @media screen and (max-width: 968px) {
+  .profile-title__img{
+    height: 225px;
+    object-fit: cover;
+  }
   .profile-content {
     justify-content: center; }
   .profile-main {
@@ -3331,7 +3338,7 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 768px) {
   .profile .wrapper {
-    /* padding-left: 15px; */
+    padding-left: 15px;
     padding-right: 15px;
     }
   .profile-form {
@@ -3340,6 +3347,12 @@ input:checked + .slider:before {
     flex-direction: column; } }
 
 @media screen and (max-width: 568px) {
+  .profile-title__text{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+  }
   .profile-content {
     padding-top: 30px; }
   .profile-main {
@@ -3359,7 +3372,7 @@ input:checked + .slider:before {
 @media screen and (max-width: 468px) {
   .profile-title__text {
     left: 13%;
-    top: 10%; }
+    top: 30%; }
   .profile-sidebar-info {
     width: 110px; }
   .profile-main {
@@ -3895,7 +3908,6 @@ input:checked + .slider:before {
   .main-top-list__item {
     width: 730px;
     height: 140px;
-    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     border: 2px solid #f2f2f2; }
