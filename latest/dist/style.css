@@ -2969,11 +2969,8 @@ body {
   padding-right: 30px; }
   @media screen and (max-width: 780px) {
     .wrapper {
-      /* flex-direction: column; */
       padding-left: 15px;
-      padding-right: 15px;
-      align-items: flex-start;
-      } }
+      padding-right: 15px; } }
 
 .header-btn {
   border: none;
@@ -3608,8 +3605,7 @@ input:checked + .slider:before {
 .main-ref-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  }
+  align-items: center; }
 
 .main-ref-title, .main-application-title {
   font-size: calc(14px + 14 * ((100vw - 320px) / 1600));
@@ -3747,20 +3743,7 @@ input:checked + .slider:before {
   .main-ref-rightside__btn, .main-application-btn {
     font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
     width: 250px;
-    height: 60px; } 
-  .main-ref-rightside{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-ref-rightside__btn{
-    margin-top: 20px;
-  }
-  .main-ref-wrapper{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+    height: 60px; } }
 
 @media screen and (max-width: 550px) {
   .main-ref {
@@ -4087,27 +4070,8 @@ input:checked + .slider:before {
   min-height: 400px;
   margin-top: 50px;
   position: relative;
-  z-index: 1;
   color: #fff; }
 
- 
-.main-discount::after{
-    content:"";
-    position:absolute;
-    z-index: -1;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width: 100%;
-    height: 100%;
-    opacity:.4;
-    background:linear-gradient(-110deg,#dd5ac2,#8cabc8 50%,#67d2cc);
-}
-
-.main-discount-wrapper{
-  z-index: 2;
-}
 .main-discount-day {
   font-size: calc(30px + 20 * ((100vw - 320px) / 1600));
   font-weight: bold;
@@ -4157,6 +4121,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 225px;
   display: flex;
+  position: relative;
   align-items: center; }
   .search-field__input {
     width: calc(100% - 110px);
@@ -4177,13 +4142,31 @@ input:checked + .slider:before {
     cursor: pointer;
     font-size: calc(20px + 5 * ((100vw - 320px) / 1600)); }
 
+.search-field::after{
+    content:"";
+    position:absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    opacity:.4;
+    background:linear-gradient(-20deg,#dd5ac2,#8cabc8 50%,#67d2cc);
+
+}
 .search-field-wrapper {
   width: 100%;
   display: flex;
+  z-index: 2;
   padding: 0; }
+
+
 
 .search-filters-sex__title {
   color: #b9b9b9;
+  z-index: 2;
   font-weight: 700; }
 
 .search-filters-sex__text {
@@ -4279,11 +4262,14 @@ input:checked + .slider:before {
 .search-filters-radio, .search-filters-select {
   width: 50%;
   display: flex;
+  z-index: 2;
   justify-content: space-around; }
 
 .search-filters-wrapper {
   padding: 0;
-  margin-top: -30px; }
+  margin-top: -30px; 
+  z-index: 12;
+}
 
 .search-filters-options {
   width: 100%;
