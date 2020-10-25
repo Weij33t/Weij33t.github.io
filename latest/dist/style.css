@@ -6301,7 +6301,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: 0;
   left: 0;
   z-index: 1060;
-  display: none;
+  display: none !important;
   max-width: 276px;
   padding: 1px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
