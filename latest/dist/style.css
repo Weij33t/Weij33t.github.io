@@ -2970,7 +2970,8 @@ body {
   @media screen and (max-width: 780px) {
     .wrapper {
       padding-left: 15px;
-      padding-right: 15px; } }
+      padding-right: 15px;
+      } }
 
 .header-btn {
   border: none;
@@ -3008,7 +3009,20 @@ body {
     font-size: calc(15px + 20 * ((100vw - 320px) / 1600));
     position: absolute;
     top: 50%; }
-
+    
+.profile-title::after{
+    content:"";
+    position:absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    opacity:.4;
+    background:linear-gradient(-100deg,#dd5ac2,#8cabc8 50%,#67d2cc);
+}
 .profile-content {
   padding-top: 50px;
   display: flex;
@@ -3317,8 +3331,9 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 768px) {
   .profile .wrapper {
-    padding-left: 15px;
-    padding-right: 15px; }
+    /* padding-left: 15px; */
+    padding-right: 15px;
+    }
   .profile-form {
     display: flex;
     justify-content: center;
