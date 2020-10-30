@@ -1,0 +1,427 @@
+<body>
+  <mainheader
+    ><!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Главная</title>
+        <link href="style.css" rel="stylesheet" />
+      </head>
+      <body>
+        <header class="header">
+          <div class="wrapper header-wrapper">
+            <div class="header-inner">
+              <div class="header-info">
+                <div class="logo">
+                  <a href="#"><img src="../src/img/logo.jpg" alt="" /></a>
+                </div>
+                <div class="phones">
+                  <div class="phones__icon">
+                    <span class="icon-whatsapp"
+                      ><span class="path1"></span><span class="path2"></span
+                      ><span class="path3"></span><span class="path4"></span
+                    ></span>
+                  </div>
+                  <div class="phones__numbers">
+                    <span class="phones__number">+7 (977) 412-75-99</span>
+                    <span class="phones__number">+7 (495) 280-03-03</span>
+                  </div>
+                </div>
+                <div class="address">
+                  <div class="address__icon">
+                    <span class="icon-saint-petersburg-metro-logo"></span>
+                  </div>
+                  <span class="address__text"
+                    >Новокосино, Реутов,<br />ул. Южная, д.15</span
+                  >
+                </div>
+                <div class="header-region">
+                  <span class="header-region__title">Регион:</span>
+                  <span class="header-region__city">Москва</span>
+                </div>
+              </div>
+              <div class="header-user">
+                <button class="header-star header-btn">
+                  <span class="icon-star-o"
+                    ><sub class="header-star__count">1</sub></span
+                  >
+                </button>
+                <div class="header-profile">
+                  <span class="icon-user-o header-profile__user-icon"></span>
+                  <a href="#" class="header-profile__name"
+                    ><span class="header-profile__first-name">Александра</span>
+                    <span class="header-profile__second-name"
+                      >Кузмицкая</span
+                    > </a
+                  ><span class="header-profile__icon icon-chevron-up"></span>
+                </div>
+                <div class="header-cart">
+                  <button class="header-cart__btn header-btn">
+                    <span class="icon-shopping-basket"></span><br /><span
+                      class="header-cart__counts"
+                      >2</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="wrapper header-nav-wrapper">
+          <nav class="header-nav">
+            <li class="header-nav__item">
+              <a href="./profile.html" class="header-nav__link">Профиль</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Заказы</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Отложенные</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Скидка</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Промокод</a>
+            </li>
+          </nav>
+        </div>
+      </body>
+    </html></mainheader
+  >
+  <main class="cart">
+    <div class="cart-field">
+      <div class="cart-field-wrapper wrapper">
+        <input
+          type="text"
+          class="cart-field__input"
+          placeholder="Добавить анализы"
+        />
+        <button class="cart-field__btn">
+          <span class="icon-search"></span>
+        </button>
+      </div>
+    </div>
+    <div class="cart-top">
+      <div class="wrapper cart-top-wrapper">
+        <div class="main-title main-top-title">Корзина</div>
+        <div class="cart-top-content">
+          <div class="cart-top-list">
+            <div class="cart-top-list__item">
+              <div class="cart-top-list__info">
+                <div class="cart-top-list__code">
+                  <span class="cart-top-list__code-name">KDL </span>
+                  &nbsp;  /  &nbsp;
+                  <span class="cart-top-list__code-number"> 1.0.D2.202</span>
+                </div>
+                <div class="cart-top-list-firstline">
+                  <div class="cart-top-list-firstline__name">Анализ</div>
+                  <div class="cart-top-list-firstline__term">Срок</div>
+                  <div class="cart-top-list-firstline__price">Цена</div>
+                </div>
+                <div class="cart-top-list-secondline">
+                  <div class="cart-top-list-secondline__name">
+                    Клинический анализ крови с лейкоцитарной формулой (5 DIFF)
+                    венозная кровь
+                  </div>
+                  <div class="cart-top-list-secondline__term">11 дней</div>
+                  <div class="cart-top-list-secondline__price">9 435 ₽</div>
+                </div>
+              </div>
+              <button class="cart-top-list__btn">
+                <span class="cart-top-list__icon icon-close"></span>
+              </button>
+            </div>
+          </div>
+          <div class="cart-rightside">
+            <div class="cart-rightside-top">
+              <div class="cart-rightside-title">Сдача анализов</div>
+              <div class="cart-rightside-radios">
+                <input
+                  type="radio"
+                  class="cart-rightside-radios__radio"
+                  id="home"
+                  name="orderType"
+                />
+                <label for="home" class="cart-rightside-radios__type">На дому</label>
+                <input
+                  type="radio"
+                  class="cart-rightside-radios__radio"
+                  id="lab"
+                  name="orderType"
+                  checked="checked"
+                />
+                <label for="lab" class="cart-rightside-radios__type"
+                  >В лаборатории</label
+                >
+              </div>
+              <div class="cart-rightside-place">
+                <div class="cart-rightside-place__title">
+                  Выберите место сдачи
+                </div>
+                <div class="cart-rightside-place__select">
+                  <select name="street0" class="cart-select">
+                    <option value="" selected="selected">
+                      Новокосино, Реутов ул. Южная
+                    </option>
+                    <option value="street1">Новокосино, Реутов ул. Южная</option>
+                    <option value="street2">Новокосино, Реутов ул. Южная</option>
+                    <option value="street3">Новокосино, Реутов ул. Южная</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cart-rightside-bottom">
+              <div class="cart-rightside-total">
+                <div class="cart-rightside-title cart-rightside-total__title">Итого</div>
+                <div class="cart-rightside-total__price">1 649 ₽</div>
+                <div class="cart-rightside-total__bio">
+                  <div class="cart-check-item cart-check-accept">
+                    <label class="container cart-check-checkboxes__container"><input type="checkbox"> <span class="cart-check-checkboxes__checkmark checkmark"></span>
+                    </label> 
+                    <label for="profileCheckBox" class="cart-check-accept__text"></label>
+                  </div>
+                  <span class="cart-rightside-total__bio-text">
+                    Забор биоматериала <span class="cart-rightside-total__bio-price">149 ₽</span>
+                  </span>
+                </div>
+                <div class="cart-rightside-total-ways">
+                  <div class="cart-rightside-total-ways__way">
+                    <span class="icon-print"></span> Распечатать
+                  </div>
+                  <div class="cart-rightside-total-ways__way">
+                    <span class="icon-envelope-o"></span> Отправить на Email
+                  </div>
+                  <div class="cart-rightside-total-ways__way">
+                    <span class="icon-mobile"></span> Отправить в видео SMS
+                  </div>
+                </div>
+                <div class="cart-rightside-total-promo">
+                  <span class="cart-rightside-promo__text cart-rightside-promo__toggle">Есть промокод?</span>
+                  <div class="cart-rightside-promo-hidden">
+                    <div class="cart-rightside-promo-hidden__text">
+                      <div class="cart-rightside-promo-hidden__title">Промокод</div>
+                      <div class="cart-rightside-promo-hidden__close cart-rightside-promo__toggle">Отмена</div>
+                    </div>
+                    <div class="cart-rightside-promo-hidden__inputs">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                      <input type="text" class="cart-rightside-promo-hidden__input" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+            <button class="cart-rightside__confirm">
+              Оформить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-warning wrapper">
+      <span class="cart-warning__mark">
+        Внимание!
+      </span>
+      Услуги по забору биоматериала оплачиваются отдельно!
+    </div>
+  </main>
+  <mainfooter
+    ><footer class="footer">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9724ecc6afac12b48fdb9f5924741c3502a66a21e16df42a0011811b21a7a74f&amp;source=constructor"
+        width="100%"
+        height="600"
+        frameborder="0"
+      ></iframe>
+      <div class="footer-wrapper wrapper">
+        <div class="footer-inner">
+          <div class="footer-contacts">
+            <span class="footer-title">Контакты</span>
+            <div class="footer-contacts__text">
+              <div class="footer-contacts__phone">
+                <span class="footer__icon icon-phone"></span>
+                <div>+7 (977) 412 75-99</div>
+              </div>
+              <div class="footer-contacts__address">
+                <span class="footer__icon icon-map-marker"></span>
+                <div>Новокосино, Реутов,<br />ул. Южная, д.15</div>
+              </div>
+              <div class="footer-contacts__email">
+                <span class="footer__icon icon-envelope-o"></span>
+                <div>info@novalab-test.ru</div>
+              </div>
+            </div>
+            <div class="footer-instagram">
+              <span class="footer-instagram__title">Мы в инстаграмм</span>
+              <div class="footer-instagram-photos">
+                <a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt="" /></a
+                ><a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt="" /></a
+                ><a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt="" /></a
+                ><a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt="" /></a
+                ><a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt="" /></a
+                ><a href="#" class="footer-instagram-photos__link"
+                  ><img src="https://via.placeholder.com/110x110" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-reviews">
+            <div class="footer-reviews-header">
+              <span class="footer-title">Отзывы</span>
+              <a href="#" class="footer-reviews-all"
+                >Смотреть<br />все отзывы</a
+              >
+            </div>
+            <div class="footer-reviews-content">
+              <div class="footer-reviews-item">
+                <div class="footer-reviews-user">
+                  <img
+                    src="https://via.placeholder.com/60x60"
+                    alt=""
+                    class="footer-reviews-user__photo"
+                  />
+                  <div class="footer-reviews-user__info">
+                    <div class="footer-reviews-user__name">Александр</div>
+                    <div class="footer-reviews-user__rating">
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="footer-reviews-user__text"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  at enim voluptates molestiae corporis excepturi.</a
+                >
+              </div>
+              <div class="footer-reviews-item">
+                <div class="footer-reviews-user">
+                  <img
+                    src="https://via.placeholder.com/60x60"
+                    alt=""
+                    class="footer-reviews-user__photo"
+                  />
+                  <div class="footer-reviews-user__info">
+                    <div class="footer-reviews-user__name">Александр</div>
+                    <div class="footer-reviews-user__rating">
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="footer-reviews-user__text"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  at enim voluptates molestiae corporis excepturi.</a
+                >
+              </div>
+              <div class="footer-reviews-item">
+                <div class="footer-reviews-user">
+                  <img
+                    src="https://via.placeholder.com/60x60"
+                    alt=""
+                    class="footer-reviews-user__photo"
+                  />
+                  <div class="footer-reviews-user__info">
+                    <div class="footer-reviews-user__name">Александр</div>
+                    <div class="footer-reviews-user__rating">
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="footer-reviews-user__text"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  at enim voluptates molestiae corporis excepturi.</a
+                >
+              </div>
+              <div class="footer-reviews-item">
+                <div class="footer-reviews-user">
+                  <img
+                    src="https://via.placeholder.com/60x60"
+                    alt=""
+                    class="footer-reviews-user__photo"
+                  />
+                  <div class="footer-reviews-user__info">
+                    <div class="footer-reviews-user__name">Александр</div>
+                    <div class="footer-reviews-user__rating">
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                      <span class="footer-reviews__icon icon-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="footer-reviews-user__text"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  at enim voluptates molestiae corporis excepturi.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <div class="footer-bottom-social">
+            <a href="#" class="footer-bottom-social__link"
+              ><span class="footer-bottom-social__icon icon-facebook"
+                ><span class="path1"></span><span class="path2"></span></span
+            ></a>
+            <a href="#" class="footer-bottom-social__link"
+              ><span class="footer-bottom-social__icon icon-vk"
+                ><span class="path1"></span><span class="path2"></span></span
+            ></a>
+            <a href="#" class="footer-bottom-social__link"
+              ><span class="footer-bottom-social__icon icon-instagram"></span
+            ></a>
+            <a href="#" class="footer-bottom-social__link"
+              ><span class="footer-bottom-social__icon icon-whatsapp"
+                ><span class="path1"></span><span class="path2"></span
+                ><span class="path3"></span><span class="path4"></span></span
+            ></a>
+          </div>
+          <div class="footer-bottom-copy">
+            <a href="#" class="footer-bottom-copy__user-policy"
+              >Пользовательское соглашение</a
+            >
+            <div class="footer-bottom-copy__rights">
+              Copyrights ©2020 NOVA LAB. Мультибрендовая медецинская лаборатория
+            </div>
+            <a href="#" class="footer-bottom-copy__license"
+              >Медецинские лицензии</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer></mainfooter
+  >
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="1.main.js"></script>
+  <script src="main.js"></script>
+  <script src="promo.js"></script>
+</body>
